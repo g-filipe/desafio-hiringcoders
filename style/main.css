@@ -195,7 +195,7 @@ header nav a:hover{
     to{ bottom:0; opacity:1 }
   }
   
-  div#success{
+  div #success{
     color: rgb(255, 255, 255);
     display: block;
     font-size: 20px;
@@ -204,7 +204,7 @@ header nav a:hover{
     text-align: center;
     padding: 10px;
   }
-  
+ 
   /*FOOTER*/
 
   footer{

@@ -19,7 +19,7 @@ formSignUp.addEventListener('submit', (event) => {
         let data = localStorage.getItem('data');
         const { name, email } = JSON.parse(data);
         divLoader.style.display = "none";
-        divSuccess.innerHTML = `Parabéns ${name}! Enviamos o cupom de desconto para seu e-mail ${email}.`;
+        divSuccess.innerHTML = `Parabéns ${name}! Enviamos o cupom de desconto para seu e-mail ${email}. Siga as instruções e Divirta-se!`;
         divSuccess.style.display = "block";
     }, 1000);
 });
