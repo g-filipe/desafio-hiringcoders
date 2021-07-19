@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Filipe Galvão">
+    <meta name="description" content="Projeto de Landing Page estilo BlackFriday.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/netflix-favicon.ico" type="image/x-icon">
+    
+    <!--Links - Estilos-->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/cont.css">
+    
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+   
+    <title>NETFLIX</title>
+</head>
+<body>
+    <header>
+           <img class="logo" src="https://fontmeme.com/permalink/210620/2fefd85d65936456ca7740f4e60cbcf0.png" alt="netflix-font">
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Contador-->
+
+    <div class="container">
+
+        <div id="contador">
+            <ul class="countdown">
+                <li>
+                    <span data-time></span>
+                    <div>dia(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>hora(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>min(s)</div>
+                </li>
+                <div class="ponto">:</div>
+                <li>
+                    <span data-time></span>
+                    <div>sec(s)</div>
+                </li>
+            </ul>
+        </div>
+    
+    </div>
+
+    <!--BlackFriday Section-->
+
+    <section class="section-container background-section-one">
+        
+       <div><img id="logo" src="img\bbf.png" alt="logotipo"></div>
+       
+      </section>
+
+    <!--Vitrine Section-->
+
+    <div class="carrossel-series">
+        <div class="owl-carousel owl-theme">
+                 <div class="item">
+                        <img class="box-series" src="img/capas-carrossel/capa1-house.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                        <img class="box-series" src="img/capas-carrossel/capa2-tgdoctor.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                         <img class="box-series" src="img/capas-carrossel/capa3-lenoxhill.jpg" alt="" srcset="">
+                </div>
+                
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa4-docfoster.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa5-privpratice.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa6-diagnosis.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa7-pandemic.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa8-askthedoctorjpg.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa9-chicagomed.jpg" alt="" srcset="">
+                </div>
+
+                <div class="item">
+                    <img class="box-series" src="img/capas-carrossel/capa-hplaylist10.jpg" alt="" srcset="">
+                </div>
+        </div>
+    </div>
+
+    <section id="section-form">
+        <div id="container-form">
+          <div id="loader" style="display: none;"></div>
+          <div id="success" style="display: none;"></div>
+          <form id="form-signup" action="#">
+            <p>Cadastre-se para garantir o seu cupom de <strong>40% OFF</strong> para assistir seus filmes e séries favoritos no plano anual.</p>
+            <input type="text" name="formName" id="inputName" placeholder="Nome" required/>
+            <input type="email" name="formEmail" id="inputEmail" placeholder="E-mail" required/>
+            <input type="submit" value="Quero meu cupom!">
+          </form>
+        </div>
+      </section>
+
+      <footer>
+                <p>
+                Desafio #1 Hiring Coders - Desenvolvido por Filipe Galvão
+                </p>
+                
+                <a href="https://www.linkedin.com/in/filipe-galv%C3%A3o-29879a130/" title="Linkedin" rel="noopener noreferrer" target="_blank"><img id="linkedin-icon" src="https://img.icons8.com/color/100/000000/linkedin.png"/></a>
+
+                <a href="https://github.com/g-filipe" title="GitHub" rel="noopener noreferrer" target="_blank"><img id="github-icon" src="https://dwglogo.com/wp-content/uploads/2017/08/Octocat_logo.png"/></a>
+
+                <a href = "mailto:galvao.s.filipe@gmail.com"><img id="email-icon" src="https://th.bing.com/th/id/R.cd3ef368d1c3affb4c4e5fee0b3f518b?rik=dHkIvGp7xZkv8w&pid=ImgRaw"/></a>
+      </footer>
+    
+    <script src="https://kit.fontawesome.com/726238cf00.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script type ="module" src="js\contador.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+</html>

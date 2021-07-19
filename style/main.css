@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* FONTES EXTERNAS NETFLIX */
+
+@font-face {
+    font-family: 'Netflix Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Netflix Sans Regular'), url('NetflixSansRegular.woff') format('woff');
+    }
+    
+    @font-face {
+    font-family: 'Netflix Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Netflix Sans Bold'), url('NetflixSansBold.woff') format('woff');
+    }
+    
+/* VARIÁVEIS DE CORES */
+
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE*/
+
+body{
+    background: var(--preta);
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    background:#030507;
+}
+
+header .logo{
+    margin-left:45px;
+    margin-top: 4px;
+    height: 45px
+}
+
+nav{
+    margin-left: 52px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold ;
+} 
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#AAA; ;
+}
+
+/*BLACK FRIDAY SECTION*/
+
+.section-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-section-one{
+  background: url('../img/netflix-bg-bf.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box-series{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*FORM/LEAD*/
+
+  #section-form{
+    height: auto;
+    margin-top: 100px;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #container-form{
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(177, 177, 177, 0.5);
+  }
+  
+  #section-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  #section-form form p{
+    font-size: 20px;
+    font-family:'Netflix Sans Regular';
+    color:rgb(255,255,255);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  #section-form form input[type=text], #section-form form input[type=email]{
+    height: 20px;
+    width: 350px;
+    color: rgb(0,0,0);
+    font-family:'Netflix Sans Regular';
+    font-size: 18px;
+    margin-bottom: 10px;
+
+    padding: 12px;
+    border: 1px solid #ccc;
+   }
+  
+   #section-form form input[type=submit]{
+    height: auto;
+    width: auto;
+    padding: 12px;
+    margin-top: 5px;
+    font-family:'Netflix Sans Regular';
+    font-size: 20px;
+    background-color: rgb(217,26,40);
+    color: white;
+    border: none;
+   }
+  
+   input[type=submit]:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  #loader {
+    position: relative;
+    left: 33%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid  rgb(217,26,40);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  div#success{
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 20px;
+    font-family:'Netflix Sans Regular';
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /*FOOTER*/
+
+  footer{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    background:#030507;;
+  }
+
+  footer p{
+    color: rgb(153,153,153);
+    font-family:'Netflix Sans Regular';
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 420px;
+    height: 34px
+  }
+
+  footer a #linkedin-icon{
+    width: 34px;
+    margin-left: 270px;
+  }
+  
+  footer a #github-icon{
+    width: 60px;
+  }
+
+  footer a #email-icon{
+    width: 38px;
+  }
+  

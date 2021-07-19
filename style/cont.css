@@ -1,0 +1,59 @@
+/* FONTE EXTERNA NETFLIX */
+
+@font-face {
+    font-family: 'Netflix Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Netflix Sans Regular'), url('NetflixSansRegular.woff') format('woff');
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 50%;
+}
+
+/*CONTADOR*/
+
+.cont #contador{
+    width: 60rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.countdown li {
+    width: 15rem;
+    font-family: 'Netflix Sans Regular';
+    font-size: 1.8rem;
+    font-style: italic;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.countdown li span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 3.2rem;
+}
+
+.ponto {
+    color: rgb(255, 255, 255);
+    font-size: 6rem;
+    margin:0 1rem;
+}
